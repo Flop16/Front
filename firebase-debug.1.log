@@ -1,0 +1,53 @@
+[debug] [2023-07-03T13:05:33.662Z] ----------------------------------------------------------------------
+[debug] [2023-07-03T13:05:33.664Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\seraf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-07-03T13:05:33.665Z] CLI Version:   11.30.0
+[debug] [2023-07-03T13:05:33.665Z] Platform:      win32
+[debug] [2023-07-03T13:05:33.665Z] Node Version:  v20.1.0
+[debug] [2023-07-03T13:05:33.666Z] Time:          Mon Jul 03 2023 10:05:33 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-07-03T13:05:33.666Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-03T13:05:33.792Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-03T13:05:33.793Z] > authorizing via signed-in user (florenciauehara@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[warn] !  hub: emulator hub unable to start on port 4400, starting on 4401 instead. {"metadata":{"emulator":{"name":"hub"},"message":"emulator hub unable to start on port 4400, starting on 4401 instead."}}
+[warn] !  logging: Logging Emulator unable to start on port 4500, starting on 4501 instead. {"metadata":{"emulator":{"name":"logging"},"message":"Logging Emulator unable to start on port 4500, starting on 4501 instead."}}
+[debug] [2023-07-03T13:05:33.808Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2023-07-03T13:05:33.809Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-07-03T13:05:33.809Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4401},{"address":"::1","family":"IPv6","port":4401}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4501}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project pag-pastel. This may result in unexpected behavior. 
+[debug] [2023-07-03T13:05:33.821Z] [hub] writing locator at C:\Users\seraf\AppData\Local\Temp\hub-pag-pastel.json
+[debug] [2023-07-03T13:05:33.851Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/pag-pastel/sites 
+[debug] [2023-07-03T13:05:34.923Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/pag-pastel/sites 200
+[debug] [2023-07-03T13:05:34.923Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/pag-pastel/sites {"sites":[{"name":"projects/pag-pastel/sites/pag-pastel","defaultUrl":"https://pag-pastel.web.app","appId":"1:119734845721:web:758910d6f3e7e0e96b0588","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-03T13:05:34.923Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pag-pastel/webApps/1:119734845721:web:758910d6f3e7e0e96b0588/config [none]
+[debug] [2023-07-03T13:05:36.049Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pag-pastel/webApps/1:119734845721:web:758910d6f3e7e0e96b0588/config 200
+[debug] [2023-07-03T13:05:36.049Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pag-pastel/webApps/1:119734845721:web:758910d6f3e7e0e96b0588/config {"projectId":"pag-pastel","appId":"1:119734845721:web:758910d6f3e7e0e96b0588","storageBucket":"pag-pastel.appspot.com","apiKey":"AIzaSyDpYjj6gHKsJA26wEbvI4TUpyYMo0BFuAg","authDomain":"pag-pastel.firebaseapp.com","messagingSenderId":"119734845721"}
+[debug] [2023-07-03T13:05:36.056Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pag-pastel [none]
+[debug] [2023-07-03T13:05:36.361Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pag-pastel 200
+[debug] [2023-07-03T13:05:36.361Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pag-pastel {"projectId":"pag-pastel","projectNumber":"119734845721","displayName":"Pag pastel","name":"projects/pag-pastel","resources":{"hostingSite":"pag-pastel"},"state":"ACTIVE","etag":"1_fcefecf8-3b6b-4a2e-a5cc-40040d6bb086"}
+[info] i  hosting[pag-pastel]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[pag-pastel]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5002 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4401
+  Other reserved ports: 4501
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [03/Jul/2023:13:05:44 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/Jul/2023:13:05:44 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [03/Jul/2023:13:05:44 +0000] "GET /img%20html/sweet2.png HTTP/1.1" 200 72575 "http://127.0.0.1:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/Jul/2023:13:05:44 +0000] \"GET /img%20html/sweet2.png HTTP/1.1\" 200 72575 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [03/Jul/2023:13:05:44 +0000] "GET /styles.css HTTP/1.1" 200 434 "http://127.0.0.1:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/Jul/2023:13:05:44 +0000] \"GET /styles.css HTTP/1.1\" 200 434 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [03/Jul/2023:13:05:44 +0000] "GET /img%20html/central1.png HTTP/1.1" 200 812619 "http://127.0.0.1:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/Jul/2023:13:05:44 +0000] \"GET /img%20html/central1.png HTTP/1.1\" 200 812619 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [03/Jul/2023:13:05:44 +0000] "GET /img%20html/0_%C3%8Dcono%20WA.png HTTP/1.1" 200 12145 "http://127.0.0.1:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/Jul/2023:13:05:44 +0000] \"GET /img%20html/0_%C3%8Dcono%20WA.png HTTP/1.1\" 200 12145 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [03/Jul/2023:13:05:45 +0000] "GET /componentes/Proyecto_2.js HTTP/1.1" 200 398 "http://127.0.0.1:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/Jul/2023:13:05:45 +0000] \"GET /componentes/Proyecto_2.js HTTP/1.1\" 200 398 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [03/Jul/2023:13:05:45 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/Jul/2023:13:05:45 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}

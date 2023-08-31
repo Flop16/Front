@@ -1,0 +1,50 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+a { 
+    color: #643C36;
+}
+
+
+h2 {
+    color: #61776E;
+}
+
+h2 {
+    color: #61776E;
+}
+
+h3 {
+    color: #61776E;
+}
+
+h4 {
+    color: #61776E;
+}
+
+h5 {
+    color: #61776E;
+}
+
+p {
+    color: #61776E;
+}
+
+
+.contenedor {
+    padding: 10px;
+    width: 100%;
+}
+
+.wsp {
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+}
